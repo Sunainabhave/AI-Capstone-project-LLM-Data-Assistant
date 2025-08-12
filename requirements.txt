@@ -6,3 +6,4 @@ qdrant-client
 google-generativeai
 streamlit
 duckdb
+pymupdf
