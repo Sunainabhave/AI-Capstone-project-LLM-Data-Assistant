@@ -8,3 +8,4 @@ streamlit
 duckdb
 pymupdf
 python-pptx
+python-multipart
