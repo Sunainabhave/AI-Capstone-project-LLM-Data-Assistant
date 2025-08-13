@@ -43,6 +43,10 @@ def extract_text_from_pptx(pptx_bytes: bytes) -> str:
         return text
     except Exception as e:
         raise RuntimeError(f"Failed to extract PPTX: {str(e)}")
+@app.get("/")
+def root():
+    return {"message": "AI Capstone Backend is running 🚀"}
+
 
 @app.post("/ask")
 async def ask_file(file: UploadFile = File(...), query: str = Form(...)):
